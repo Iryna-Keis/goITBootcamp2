@@ -1,0 +1,11 @@
+.task4 {
+    counter-reset: roman;
+}
+
+.example2 {
+    counter-increment: roman;
+    list-style: none;
+}
+.example2:before {
+    content:counter(roman, upper-roman);
+}

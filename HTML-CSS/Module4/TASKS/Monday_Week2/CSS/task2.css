@@ -1,0 +1,13 @@
+.example2 {
+    color: #0E1116;
+
+}
+.example2:nth-child(3n+1) {
+    background-color: #88292F;
+}
+.example2:nth-child(3n+2) {
+    background-color: #5DB7DE;
+}
+.example2:nth-child(3n+3) {
+    background-color: #0D5D56;
+}

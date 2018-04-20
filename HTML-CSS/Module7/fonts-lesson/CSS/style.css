@@ -1,0 +1,15 @@
+@import "font.css";
+
+.p1 {
+    font-family: "SENYUN",sans-serif;
+}
+.p2 {
+    font-family: "Sketchica",sans-serif;
+    font-weight: 900;
+}
+.p3 {
+    font-family: "Sketchica-Bold",sans-serif;
+}
+.p4 {
+    font-family: "Sketchica-Black",sans-serif; ;
+}

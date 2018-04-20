@@ -1,0 +1,25 @@
+/*.task1 {*/
+    /*background-color: deeppink;*/
+
+/*}*/
+.emample1 {
+    float: left;
+}
+
+.clearfix:after {
+display: block;
+    content: "";
+    clear: both;
+
+
+}
+.emample1 {
+    background-color: green;
+    margin: 30px;
+    list-style: none;
+    font-size: 30px;
+}
+.emample1:hover {
+    color:orangered;
+}
+

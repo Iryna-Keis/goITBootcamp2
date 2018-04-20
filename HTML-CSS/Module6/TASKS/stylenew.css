@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700,800);
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.simple {
+    background: #91877b;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+.relief {
+    background-color: #3a50d9;
+    color: #e0eff2;
+    font: italic bold 100px Georgia, Serif;
+    text-shadow: -4px 3px 0 #3a50d9, -14px 7px 0 #0a0e27;
+}
+.vamp {
+    color: #92a5de;
+    background: red;
+    text-shadow:0px 0px 0 rgb(137,156,213),1px 1px 0 rgb(129,148,205),2px 2px 0 rgb(120,139,196),3px 3px 0 rgb(111,130,187),4px 4px 0 rgb(103,122,179),5px 5px 0 rgb(94,113,170),6px 6px 0 rgb(85,104,161),7px 7px 0 rgb(76,95,152),8px 8px 0 rgb(68,87,144),9px 9px 0 rgb(59,78,135),10px 10px 0 rgb(50,69,126),11px 11px 0 rgb(42,61,118),12px 12px 0 rgb(33,52,109),13px 13px 0 rgb(24,43,100),14px 14px 0 rgb(15,34,91),15px 15px 0 rgb(7,26,83),16px 16px 0 rgb(-2,17,74),17px 17px 0 rgb(-11,8,65),18px 18px 0 rgb(-19,0,57),19px 19px 0 rgb(-28,-9,48), 20px 20px 0 rgb(-37,-18,39),21px 21px 20px rgba(0,0,0,1),21px 21px 1px rgba(0,0,0,0.5),0px 0px 20px rgba(0,0,0,.2);
+}
+body {
+    background-color: #36aeea;
+}
+
+.box  {width:70%;
+    height:200px;
+    background:yellow;
+    margin:40px auto;
+    transition: 1s;
+    display: flex;
+    animation: fadeOutLeft 2s infinite;
+}
+
+/*.box:hover {*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+    /*background-color: yellow;*/
+    /*transition: 1s;*/
+/*}*/
+.btn {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    padding: 1.2em 2em;
+    background-color: rgb(86, 114, 221);
+    /*transition: 2s cubic-bezier(1, -0.25, 1, -0.25);*/
+    margin: auto;
+    animation: flip 4s infinite;
+}
+.btn:hover {
+    transform: rotate(-45deg) scale(2.2);
+    background-color: red;
+}
+
+@keyframes btn {
+
+    0% {
+    transform: scale(1, 1) rotate(0deg);
+}
+25%
+{
+    transform: scale(1.5, 1.5) rotate(90deg);
+}
+
+50%
+{
+    transform: scale(2, 2) rotate(180deg)
+;
+}
+100%
+{
+    transform: scale(1, 1) rotate(360deg);
+}
+}

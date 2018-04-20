@@ -1,0 +1,4 @@
+.example2::before {
+    content: "\2192"; ;
+
+}

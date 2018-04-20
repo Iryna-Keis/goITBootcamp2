@@ -1,0 +1,21 @@
+/*.picture {*/
+    /*width: 420px;*/
+    /*height: 570px;*/
+    /*background-image: url('../Bootstrap-images/Layer-18.jpg');*/
+    /*-webkit-background-size: cover;*/
+    /*background-size: cover;*/
+/*}*/
+
+/*@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {*/
+    /*.picture {*/
+        /*background-image: url("../Bootstrap-images/Layer-19@2x.jpg");*/
+    /*}*/
+/*}*/
+/*.picture {*/
+    /*background-image: url('../Bootstrap-images/LINE.svg');*/
+/*}*/
+/*.svg1, .svg2 {*/
+    /*width: 32px;*/
+    /*height: 32px;*/
+/*}*/
+

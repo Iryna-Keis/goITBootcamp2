@@ -1,0 +1,269 @@
+@import "variable.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+/*padding: 0 15px делаем чтобы текс не прилипал к самым краям экрана*/
+.container {
+    max-width: 1140px;
+    margin: auto;
+    padding: 0 15px;
+}
+/*наживаем bgsz*/
+.wrapper-header {
+    background-image: url("image/man.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: top center;
+    /*задаем для эффекта паралакс, при скроле картинка стоит на месте**/
+    background-attachment: fixed;
+}
+
+.wrapper-top {
+    background-color: rgba(255, 255, 255, 0.25);
+
+}
+/*высоту можно задать паддингом, можно задать лайн-хайт, но самый лучший способ- min-height*/
+/*align-items выравнивает по вспомогательной оси (сверзу вниз), justify-content - по основной оси (по горизонтали слева направо)*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    flex-basis: 510px;
+}
+.logo {
+    font-family: 'Euphoria Script', cursive;
+    font-size: 29px;
+    color: #95a5ad;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.menu-link {
+    text-transform: uppercase;
+    color: #95a5ad ;
+    font-size: 12px;
+    font-family: var(--text);
+    font-weight: bold;
+
+}
+/*сначала мы паддинг боттом и бордер боттом примеряем для меню линк - оно подчеркивает все пункты меню, потом переносим их в ховер*/
+.menu-link:hover {
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--btn-color);
+}
+/*transition: 1s плавно меняет заливку кнопки*/
+.call {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 15px 44px;
+    color: var(--btn-color);
+    border: 3px solid var(--btn-color);
+    border-radius: 4px;
+    background-color: transparent;
+    font-weight: bold;
+    transition: 1s;
+}
+/*тут приписывает font-size: 20px чтобы увкличивался шрифт при ховере, тут также можно задавать шрифту и другие свойства, напимер фонт-фамили и т.д.*/
+.call:hover {
+    background-color: var(--btn-color);
+    color: #ffffff;
+    font-size: 20px;
+
+}
+ .info {
+     padding: 170px 0 190px 40px;
+
+ }
+ .info-title {
+     font-family: var(--text);
+     font-size:50px;
+     text-transform: uppercase;
+     font-weight: bold;
+     color: white;
+
+
+
+ }
+ /*ВАЖНО!!!! между елементами одного уровня делаем расстояние МАРЖИНАМИ, между елементами разных уровней -ПАДДИНГАМИ!*/
+.info-text {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: var(--text);
+    font-size:18px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    max-width: 430px;
+}
+.info-span {
+    font-family: 'Euphoria Script', cursive;
+    color: var(--btn-color);
+    display: block;
+    margin-top: -25px;
+
+}
+
+.info-btn {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 20px 75px;
+    color: #ffffff;
+    border: 3px solid transparent;
+    border-radius: 2px;
+    background-color: var(--btn-color);
+    font-weight: bold;
+    transition: 1s;
+    letter-spacing: 2px;
+}
+
+.info-btn:hover {
+    background-color: #ffffff;
+    color: var(--btn-color);
+    font-size: 20px;
+    /*border: 3px solid var(--btn-color);*/
+
+}
+
+.wrapper {
+    background-color:#e3e2e1
+
+}
+.about {
+    position: relative;
+    padding: 255px 0 230px;
+}
+.about-title {
+    font-family: var(--text);
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #393b44;
+    margin-bottom: 30px;
+
+}
+.text {
+    font-family: var(--text);
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #949494;
+
+}
+.about-text {
+    max-width: 352px;
+    margin-bottom: 30px;
+}
+
+.about-btn {
+    padding: 15px 25px;
+    font-size: 12px;
+
+}
+.about-pict1 {
+    width: 810px;
+    height: 570px;
+    display: block;
+    position: absolute;
+    top: -35px;
+    right: -10.5%;
+}
+.about-pict2 {
+    display: block;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    bottom: 40px;
+    left: 34%;
+}
+
+.wrapper-journal {
+    background-color: #ffffff;
+}
+
+/*задаем расстояния внутри секции - между верхним и нижним краями рамки-РАЗОБРАТЬСЯ С ЭТИМ!!! */
+/*journal-counter??? что это*/
+.journal {
+    padding: 110px 0 90px;
+    counter-reset: journal-counter;
+
+}
+.title {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color:#2c2e37;
+    font-family: var(--text);
+    margin-bottom: 70px;
+    font-weight: 700;
+
+}
+.journal-article-caption {
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: var(--text);
+    color: var(--btn-color);
+    font-weight: bold;
+
+}
+.journal-body {
+    display: flex;
+
+}
+.journal-article {
+    flex-basis:33.333%;
+    journal-increment: journal-counter;
+}
+
+.journal-img {
+    width: 350px;
+    height: 320px;
+}
+.journal-article-title {
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 50px 0 30px;
+
+}
+
+
+
+.reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+/*journal-counter это мы придумали название*/
+.article-content > .text::after {
+    content: "0"counter(journal-counter);
+    display: block;
+    font-family: "Times New Roman", serif;
+    margin-top: 45px;
+}
+.icon-container {
+    position: relative;
+}
+.fa-tint, .fa-envira, .fa-gratipay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    color: #ffffff;
+}

@@ -1,0 +1,197 @@
+@import "font.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    width: 930px;
+    margin: auto;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.135rem 0 5.625rem;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+}
+.menu-link {
+    color: black;
+}
+.menu-link:hover {
+    color: #fed136;
+}
+.nav {
+        flex-basis: 30rem;
+}
+
+.logo {
+    font-family: "Wisdom Script AI", sans-serif;
+    font-size: 1.625rem;
+    color: #fed136;
+    text-transform: capitalize;
+}
+
+.service-title {
+    font-family: "Montserrat-Bold", sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: rgb(34,34,34);
+    padding-bottom: 1.5625rem;
+
+}
+.text {
+    font-family: 'Lobster', cursive;
+    color: rgba(34,34,34, 0.5);
+    font-size: 1rem;
+
+}
+
+.service-info {
+    text-align: center;
+    margin-bottom: 5rem;
+    margin-top: 6.25rem;
+}
+.service-section {
+    display: flex;
+    justify-content: space-between;
+
+}
+.service-set {
+    text-align: center;
+    margin-right: 3rem;
+
+}
+.service-set:last-child {
+    margin-right: 0;
+}
+/*.set-text {*/
+    /*text-align: left;*/
+/*}*/
+
+.set-icon {
+    display: block;
+    margin: auto;
+    padding: 0.8rem;
+    width: 5rem;
+    height: 5rem;
+    border: 0.2rem solid #fed136; ;
+    border-radius: 100%;
+    margin-bottom: 1.875rem;
+}
+.info-set {
+    font-family: "Montserrat-Bold", sans-serif;
+    font-size: 1.125rem;
+    text-transform: capitalize;
+    color: rgb(34,34,34);
+    font-weight: bold;
+    margin-bottom: 1.5625rem;
+}
+.set-text {
+    font-family: "Roboto Slab Regular", sans-serif;
+    font-size: 0.875rem;
+    color: rgba(34,34,34, 0.5);
+}
+
+.wrapper-main {
+    background-image: url("../images/Map Image.png");
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.contact-title {
+    font-family: "Montserrat-Bold", sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: white;
+    padding-bottom: 1.5625rem;
+    padding-top: 5rem;
+}
+
+.text1 {
+    font-family: 'Lobster', cursive;
+    color: rgb(119,119,122);
+    font-size: 1rem;
+}
+
+.form-div {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.thin-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+
+}
+.thinform {
+    padding: 1.25rem 18.25rem 1.25rem 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+    color:  #bbbbbb;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+
+.text-area {
+    font-family: 'Montserrat', sans-serif;
+    color:  #bbbbbb;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-align: left;
+    padding:0.625rem;
+    height: 13.125rem;
+    flex-basis:100%;
+
+}
+.form-div {
+    display: flex;
+    justify-content: space-around;
+    /*align-items:space-around;*/
+
+}
+.btn {
+    display: block;
+    margin: 1.5625rem auto 0;
+    border-radius: 0.1875rem;
+    background-color:  #fed136;
+    width: 15rem;
+    height: 4.125rem;
+    font-family: 'Montserrat', sans-serif;
+    color:  #ffffff;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-align: center;
+}
+.login-page {
+    padding-bottom: 6rem;
+}
+
+input:valid {
+    outline: 0.125rem solid green;
+}
+
+input:invalid {
+    outline: 0.125rem solid red;
+}

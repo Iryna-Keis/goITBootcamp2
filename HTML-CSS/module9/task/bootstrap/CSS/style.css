@@ -1,0 +1,21 @@
+.container-fluid {
+    background: red;
+    height: 100vh;
+}
+.col-8 {
+    background: green;
+    font-size: 100px;
+    color: white;
+}
+.black {
+    background-color: black;
+}
+.yellow {
+    background-color: yellow;
+}
+.pink {
+    background-color: hotpink;
+}
+.green {
+    background-color: green;
+}

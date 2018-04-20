@@ -1,0 +1,42 @@
+@import "var.css";
+@import "footer.css";
+@import "header.css";
+@import "reset.css";
+
+.wrapper-img {
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../img/new images/gallery-bg.jpg');
+}
+
+.gallery {
+    padding: 2rem 0 1.3rem;
+
+}
+.gallery-text {
+    text-align: center;
+}
+.gallery-img:hover {
+    box-shadow: 0.5rem 0.5rem 0.2rem 0.1rem #777;
+    transform: translate(0, -1rem);
+}
+
+.gallery-img {
+    transition: 1s;
+}
+.gallery-img:nth-child(odd):hover {
+    box-shadow: 0.5rem 0.5rem 0.2rem 0.1rem #777;
+    transform: translate(0, -1rem);
+}
+.gallery-img:last-child:hover {
+    box-shadow: 0.5rem 0.5rem 0.2rem 0.1rem #777;
+    transform: translate(0, -1rem);
+}
+@media (min-width: 768px) {
+    .gallery {
+       display: flex;
+        flex-wrap: wrap;
+    }
+}
+.gallery-img {
+    width: 50%;
+    align-self: flex-start;
+}
